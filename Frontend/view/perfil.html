@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=”robots” content=”index, follow”>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Faça parte da primeira plataforma para mulheres brasileiras estudando ou trabalhando em tecnologia!">
+    <meta name="author" content="Brazilians in Tech">
+    <meta name="description"
+        content="Ache oportunidades de emprego para mulheres em STEM e tecnologia, no Brasil e no mundo.">
+
+    <title>Brazilians in Tech | Perfil</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesomo 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/resposive-theme.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="hubVagas.html">
+                <img src="../images/logo.png" width="100" height="50" alt="Logo Brazilians in Tech">
+            </a>
+
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Abrir Navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarText">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">MEU PERFIL</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="myVagas.html">MINHAS VAGAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hubVagas.html">VAGAS</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <div class="d-flex">
+                                <img class="nav-img-user" src="../images/userTest.png">
+                                <a class="nav-link dropdown-toggle" id="userNameNavBar"
+                                    href="/oportunidades/">USUÁRIO</a>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="logOut()">Logout<i class="fa fa-sign-out"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main-->
+    <main>
+        <div class="container justify-content-center bodyCadastroCurriculo">
+            <div class="row nav-location">
+                <div class="col-12 align-items-center">
+                    <div class="d-flex">
+                        <a href="perfil.html">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                        //Minhas Vagas
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center bodyHubVagas">
+                <div class="col-12">
+                    <h1>Perfil</h1>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="imgBox">
+                                <div class="row">
+                                    <div class="col-10 offset-1 perfilCaixa">
+                                        <h1 id='nomePerfil'></h1>
+                                        <img src="../images/userTest.png" class="rounded-circle imgPerfil">
+                                        <div class="d-flex mt-4">
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                            <h2 class="titulo-dados-pessoais gap-3 perfilCaixa__caption"> Engenheiro de
+                                                Software</h2>
+                                        </div>
+                                        <div class="d-flex mt-4">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <h2 class="titulo-dados-pessoais gap-3 perfilCaixa__caption"> São Paulo, SP
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+                            <div class="container">
+                                <div class="row" style="margin-bottom: 20px;">
+                                    <div class="col-12 containerGreyColor">
+                                        <div class="textPerfil row">
+                                            <h2 style="width: max-content; margin-top: 10px;">Sua descrição</h2>
+
+                                            <p id='descricaoUser'>Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting
+                                                industry. Lorem
+                                                Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                when
+                                                an
+                                                unknown printer took a galley of type and scrambled it to make a type
+                                                specimen
+                                                book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content">
+                                    <div class="col-12 containerGreyColor">
+                                        <div class="textPerfil row">
+
+                                            <h2 style="width: max-content; margin-top: 10px;">Seu objetivo</h2>
+
+                                            <p id='objetivoUser'>Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s, when
+                                                an
+                                                unknown printer took a galley of type and scrambled it to make a type
+                                                specimen
+                                                book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="perfilSkillsBox">
+                                <div class="textPerfil row">
+                                    <div class="col-12">
+                                        <h2>Hard-Skills</h1>
+                                            <ul class="listaSkills" id = "hardSkillList" style="gap: 40px;">
+                                                <!-- <li>Lorem Ipsum</li>
+                                                <li>Lorem Ipsum</li>
+                                                <li>Lorem Ipsum</li>
+                                                <li>Lorem Ipsum</li> -->
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="perfilSkillsBox">
+                                <div class="textPerfil row">
+                                    <div class="col-6">
+                                        <h2>Hard-Skills</h1>
+                                            <ul class="listaSkills">
+                                                <li>Lorem Ipsum</li>
+                                                <li>Lorem Ipsum</li>
+                                                <li>Lorem Ipsum</li>
+                                                <li>Lorem Ipsum</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div>
+                        <div class="editarCurriculo">
+                            <h1>Editar currículo</h1>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0">
+                                    <label class="descricao fa-pull-left" for="">Lorem<span
+                                            class="asterisco">*</span></label>
+                                    <input class="inputeditarvagas" placeholder="Lorem Ipsum" type="text">
+                                    <label class="descricao fa-pull-left" for="">Lorem<span
+                                            class="asterisco">*</span></label>
+                                    <input class="inputeditarvagas" placeholder="Lorem Ipsum" type="text">
+                                    <label class="descricao fa-pull-left" for="">Lorem<span
+                                            class="asterisco">*</span></label>
+                                    <input class="inputeditarvagas" placeholder="Lorem Ipsum" type="text">
+                                </div>
+
+                                <div class="col-sm-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0">
+                                    <label class="descricao fa-pull-left" for="">Lorem<span
+                                            class="asterisco">*</span></label>
+                                    <input class="inputeditarvagas" placeholder="Lorem Ipsum" type="text">
+                                    <label class="descricao fa-pull-left" for="">Lorem<span
+                                            class="asterisco">*</span></label>
+                                    <input class="inputeditarvagas" placeholder="Lorem Ipsum" type="text">
+                                    <label class="descricao fa-pull-left" for="">Lorem<span
+                                            class="asterisco">*</span></label>
+                                    <input class="inputeditarvagas" placeholder="Lorem Ipsum" type="text">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 offset-lg-4">
+                                <button type="button" class="btnUpdateCurriculum">Atualizar</button>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- <button type="button" class="tituloPerfil fundoBotao">
+                            <h3 class="excluirPerfil">Excluir Conta</h3>
+                        </button> -->
+                            <button class="buttonDeleteAccount">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span> Excluir Conta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+
+
+    <!-- Footer-->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="/sobre/">Sobre</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="/contato/">Contato</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="/termos/">Termos de Uso</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="/privacidade/">Política de Privacidade</a>
+                        </li>
+                    </ul>
+
+                    <p class="small mb-4 mb-lg-0 copyright">Copyright &copy; Brazilians in Tech 2020. All Rights
+                        Reserved.</p>
+                </div>
+
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="/contato/" target="_blank">
+                                <i class="far fa-envelope fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="https://instagram.com/braziliansintech?igshid=7v4wu7brlxoj" target="_blank">
+                                <i class="fab fa-instagram fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item mr-3">
+                            <a href="https://twitter.com/brazilianstech" target="_blank">
+                                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/braziliansintech/" target="_blank">
+                                <i class="fab fa-linkedin fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- JavaScript File -->
+    <script src="../js/perfil.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

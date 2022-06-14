@@ -1,0 +1,1866 @@
+:root {
+  --roxo-padrao: #530084;
+  --roxo-hover: #280044;
+  --amarelo-padrao: #F3C42E;
+  --amarelo-hover: #F89F4F;
+  --branco-padrao: #FFFFFF;
+  --preto-padrao: #000000;
+  --cinza-claro-fundo: #EFEFEF;
+  --cinza-fundo: rgba(196, 196, 196, 0.4);
+  --shadow-black: rgba(0, 0, 0, 0.1);
+  --shadow-green: #347601;
+  --shadow-yellow: #EAD200;
+  --shadow-red: #760101;
+  --confirm: #008000;
+  --error: #DF0033;
+}
+
+@font-face {
+  font-family: 'nunito';
+  src: url('../fonts/nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'nunito-bold';
+  src: url('../fonts/nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'nunito-semibold';
+  src: url('../fonts/nunito-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'nunito-italic';
+  src: url('../fonts/nunito-Italic.ttf');
+}
+
+body {
+  font-size: 20px;
+  color: var(--roxo-padrao);
+  background-position: center;
+  padding-top: 75px;
+  /* distÃ¢ncia do nav fixo */
+  position: relative;
+  padding-bottom: 122px;
+  /* distÃ¢ncia do footer */
+  min-height: auto;
+}
+
+main {
+  padding-bottom: 3rem !important;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  box-shadow: 0px 8px 16px 0px var(--shadow-black);
+}
+
+.nav-img-user {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item a {
+  font-size: 16px;
+  color: #280044;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: none;
+}
+
+.nav-location {
+  height: max-content;
+  padding: 10px;
+  background-color: var(--cinza-claro-fundo);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.nav-location div div a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: var(--roxo-padrao);
+  font-family: "nunito-semibold";
+  font-size: 20px;
+}
+
+.fa-home {
+  color: var(--amarelo-padrao);
+  font-size: 25px;
+}
+
+.fa-sign-out {
+  color: var(--amarelo-padrao);
+  margin-left: 10px;
+  font-size: 20px !important;
+}
+
+/* Fim Navbar */
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #530084 0% 0% no-repeat padding-box;
+  width: 100%;
+  color: white;
+  padding: 33px 0 33px;
+  font-family: 'nunito';
+  margin-top: 15px;
+}
+
+footer a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'nunito';
+}
+
+footer a:hover {
+  color: #F3C42E;
+}
+
+footer .copyright {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-family: 'nunito';
+}
+
+/* Fim Footer */
+
+/* Início Formulário */
+h1, h2 {
+  font-family: 'nunito-bold';
+  color: var(--roxo-padrao);
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  width: max-content;
+}
+
+.bodyCadastroCurriculo {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.bodyVagaExpandida {
+  margin-top: 25px;
+}
+
+.bodyHubVagas {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.img-perfil {
+  width: 100%;
+}
+
+.inputDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+
+}
+
+.listaInputs {
+  display: flex;
+  justify-content: center;
+}
+
+.textGeneralInput {
+  font-family: 'nunito-semibold';
+  font-weight: bold;
+  font-size: 17pt;
+  float: left;
+}
+
+.generalInput {
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  background-color: var(--cinza-claro-fundo);
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  color: var(--roxo-padrao);
+  font-size: 14pt;
+  border: 2px solid var(--roxo-padrao);
+}
+
+.neededInput {
+  color: #F3C42E;
+}
+
+
+.fa-user, .fa-graduation-cap, .fa-briefcase, .fa-puzzle-piece, .fa-info-circle {
+  color: var(--roxo-padrao);
+  font-size: 30px;
+  margin-left: 10px;
+  align-items: center;
+  display: flex;
+  margin-right: 10px;
+}
+
+.titulo-dados-pessoais {
+  font-family: "nunito-bold";
+  margin-bottom: 25px;
+  text-align: center;
+  display: contents;
+}
+
+.balao-skill {
+  width: max-content;
+  background-color: var(--amarelo-padrao);
+  padding: 0px 14px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.balao-skill p {
+  font-family: "nunito-italic";
+  font-size: 14px;
+  color: var(--branco-padrao);
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.balao-skill button {
+  font-family: "nunito";
+  font-size: 16px;
+  margin-top: 3px;
+  color: var(--branco-padrao) !important;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5px;
+  background-color: transparent;
+  border: 0;
+}
+
+.balao-skill button:focus {
+  outline: 0;
+}
+
+.skills {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.removeCandidatarBtn {
+  background-color: transparent;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 55px;
+  border: 0;
+  background-color: var(--roxo-padrao);
+  border-bottom: 2px solid var(--roxo-padrao);
+  border-radius: 28px;
+  color: var(--branco-padrao);
+  font: 'nunito';
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.removeCandidatarBtn:hover {
+  background-color: var(--roxo-hover);
+}
+
+.candidatarBtn {
+  background-color: transparent;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+  height: 55px;
+  border: 0;
+  background-color: var(--amarelo-padrao);
+  border-bottom: 2px solid var(--amarelo-padrao);
+  border-radius: 28px;
+  color: var(--branco-padrao);
+  font: 'nunito';
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.candidatarBtn:hover {
+  background-color: var(--amarelo-hover)
+}
+
+.cardForVagaExpandida {
+  width: 85%;
+  height: max-content;
+  background-color: var(--cinza-claro-fundo);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.imgVagaExpandida {
+  width: 100%;
+  max-width: 230px;
+}
+
+.listaVagaExpandida {
+  margin-left: 20px;
+}
+
+.listaVagaExpandida li::marker {
+  color: var(--amarelo-padrao);
+  font-size: 22pt;
+}
+
+.listaInfosVagaExpandida {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  gap: 10px;
+  width: max-content;
+}
+
+.btnSaveCurriculum, .btnUpdateCurriculum {
+  height: 60px;
+  width: 80%;
+  border-radius: 30px;
+  background-color: var(--amarelo-padrao);
+  color: white;
+  border: 0px;
+  font-size: 18pt;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'nunito';
+  line-height: auto;
+}
+
+.btnSaveCurriculum:hover, .btnUpdateCurriculum:hover {
+  background-color: var(--amarelo-hover);
+}
+
+
+.alertContainer {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.alertDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  width: 78%;
+  height: max-content;
+  border-radius: 12px;
+  gap: 5px;
+  color: white;
+  padding: 10px;
+}
+
+/*Button Curriculum */
+.btnSendCurriculum {
+  font-family: inherit;
+  font-size: 20px;
+  background: var(--amarelo-padrao);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 28px;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btnSendCurriculum:focus {
+  outline: 0;
+}
+
+.svg-wrapper-1 {
+  margin-left: auto;
+}
+
+.btnSendCurriculum span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  margin-right: auto;
+}
+
+.btnSendCurriculum svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btnSendCurriculum:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btnSendCurriculum:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btnSendCurriculum:hover span {
+  transform: translateX(12.5em);
+}
+
+.btnSendCurriculum:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+
+
+.listFilters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.searchIcon {
+  position: absolute;
+  margin-left: -165px;
+}
+
+.inputSearchHubVagas {
+  background-color: var(--cinza-fundo);
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  padding-left: 45px;
+  font-family: 'nunito';
+  color: var(--roxo-padrao);
+}
+
+.empresaVagaHubVagas {
+  font-family: 'nunito-semibold';
+  text-align: center;
+  width: 100% !important;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+.inputSearchHubVagas::placeholder {
+  font-family: 'nunito';
+  color: var(--roxo-padrao);
+}
+
+.btnForFiltrarIcon {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.btnForFiltrarIcon:focus {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+/* Início HubVagasComponent */
+.divRightHubVagasComponent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.divRightHubVagasComponent p {
+  text-align: start;
+}
+
+.divRightHubVagasComponent p img {
+  padding-right: 10px;
+}
+
+.imgHubVagas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainWidGet {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  padding: 20px;
+  min-height: 220px;
+  max-height: 300px;
+}
+
+.mainWidGetBackground {
+  background: linear-gradient(-45deg, #DADADA 40%, #F8F6F7 50%, #FAFAFA 52%, #F8F6F7 54%, #DADADA 60%);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+.pForHubVagas {
+  font-size: 12pt;
+  height: 20px;
+}
+
+.nomeVagaHubVagas {
+  font-size: 13pt;
+  height: 50px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+
+.divBtnSeeMore {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vagaComponent {
+  width: 90%;
+  height: max-content;
+  background-color: var(--cinza-fundo);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.bodyVagaComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  margin-top: 40px;
+  transition: all 0.5s;
+}
+
+
+.bodyVagaComponent:hover {
+  transition: all 0.5s;
+  transform: translateY(-10px) scale(1.05);
+}
+
+.btnSeeMore {
+  background-color: var(--amarelo-padrao);
+  height: 25px;
+  width: 85px;
+  border-radius: 22px;
+  font-size: 10pt;
+  color: var(--branco-padrao);
+  border: 0px;
+  outline: 0px;
+  margin-right: 10px;
+}
+
+.btnSeeMore:hover {
+  background-color: var(--amarelo-hover);
+}
+
+.btnSeeMore:focus {
+  outline: 0;
+}
+
+.bodyFiltersHubVagas {
+  padding: 15px;
+  background-color: #AAAAAA;
+  width: 60%;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  display: none;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Fim HubVagas */
+
+.bodygeralcadastrarvagas {
+  box-sizing: border-box;
+}
+
+.bodycadastrarvagas {
+  font-family: "nunito";
+}
+
+.containercadastrarvagas {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.inputBoxcadastrarvagas {
+  margin-bottom: 20px;
+}
+
+.labelcadastrarvagas {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #530084;
+  border-bottom: 2px solid gold;
+
+}
+
+.inputcadastrarvagas {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #EFEFEF;
+  color: #530084;
+  border: none;
+  border-radius: 15px;
+  font-family: "nunito";
+  font-size: 12pt;
+}
+
+.inputcadastrarvagas::placeholder {
+  color: #530084;
+}
+
+.button {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+  background-color: var(--amarelo-padrao);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-family: "nunito";
+}
+
+/* Style ADM  vaga cadastro*/
+
+.newUserButtonADM {
+  width: 80%;
+  height: 45px;
+  border-radius: 23px;
+  background-color: var(--amarelo-padrao);
+  font-family: "nunito-semibold";
+  color: var(--branco-padrao);
+  border-color: var(--amarelo-padrao);
+  border: 0;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 45px;
+}
+
+.newUserButtonADM:hover {
+  outline: 0;
+  background-color: var(--amarelo-hover);
+  color: var(--branco-padrao);
+}
+
+.newUserButtonADM:focus {
+  outline: 0;
+}
+
+.newCompanyADM {
+  width: 80%;
+  height: 45px;
+  border-radius: 23px;
+  background-color: var(--roxo-padrao);
+  font-family: "nunito-semibold";
+  color: var(--branco-padrao);
+  border-color: var(--roxo-padrao);
+  border: 0;
+  font-size: 20px;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+.newCompanyADM:hover {
+  outline: 0;
+  background-color: var(--roxo-hover);
+  color: var(--branco-padrao);
+}
+
+.newCompanyADM:focus {
+  outline: 0;
+}
+
+.span-login {
+  float: left;
+  font-family: "nunito-semibold";
+  font-size: calc(1.3rem + .6vw);
+}
+
+.space {
+  margin-top: 50px;
+}
+
+.back-input {
+  background: var(--cinza-fundo);
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--roxo-padrao) !important;
+  font-family: 'nunito-italic' !important;
+  src: url('../fonts/nunito-Italic.ttf');
+}
+
+input {
+  color: var(--roxo-padrao) !important;
+}
+
+input:focus {
+  border-color: var(--amarelo-padrao) !important;
+  outline: 0;
+}
+
+/* Início Filtro Hub Vagas */
+
+.btnForFiltroHubVagas {
+  text-align: end;
+}
+
+.titleFiltroHubVagas {
+  text-align: center;
+}
+
+.btnForFiltro {
+  width: 160px;
+  height: 50px;
+  background-color: var(--amarelo-padrao);
+  border-radius: 12px;
+  border: 0;
+  outline: 0;
+  color: var(--branco-padrao);
+  font-family: 'nunito-bold';
+  font-size: 12pt;
+}
+
+.btnForFiltro:hover {
+  background-color: var(--amarelo-hover);
+  outline: 0;
+}
+
+.btnForFiltro:focus {
+  background-color: var(--amarelo-hover);
+  outline: 0;
+}
+
+.btnToCloseFilter {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.btnToCloseFilter:hover {
+  outline: 0;
+}
+
+.btnToCloseFilter:focus {
+  outline: 0;
+}
+
+.btnToApplyFiltro {
+  width: 380px;
+  background-color: var(--roxo-padrao);
+  height: 45px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--branco-padrao);
+  font-family: 'nunito-bold';
+  margin-top: 60px;
+}
+
+.btnToApplyFiltro:hover {
+  outline: 0;
+  background-color: var(--roxo-hover);
+}
+
+.btnToApplyFiltro:focus {
+  outline: 0;
+  background-color: var(--roxo-hover);
+}
+
+/* Fim Filtro Hub Vagas */
+
+/*Perfil*/
+.imgBox {
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--cinza-claro-fundo);
+  min-height: 160px;
+  max-height: 500px;
+  border-radius: 5%;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+  padding: 30px 0px;
+}
+
+.imgPerfil {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 10%;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.descricao {
+  margin-top: 20px;
+  width: max-content;
+  font-family: 'nunito';
+}
+
+.imgBxIcon {
+  margin-left: auto;
+  font-size: 30px;
+  width: max-content;
+}
+
+.hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  margin-bottom: 4rem;
+}
+
+.fa-edit, .fa-map-marker, .fa-building {
+  color: var(--amarelo-padrao);
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.fa-sliders, .fa-times {
+  color: var(--amarelo-padrao);
+  font-size: 30px;
+
+}
+
+.fa-times {
+  margin-top: 10px;
+}
+
+.briefcase-yellow, .info-circle-yellow, .fa-clock-o {
+  color: var(--amarelo-padrao);
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 0 !important;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.textPerfil {
+  text-align: justify;
+}
+
+.labeleditarvagas {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #530084;
+  border-bottom: 2px solid gold;
+  margin: 20px;
+  text-align: justify;
+
+}
+
+.inputeditarvagas {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #EFEFEF;
+  color: #530084;
+  border: none;
+  border-radius: 15px;
+  font-family: "nunito";
+  font-size: 12pt;
+  border: 2px solid var(--roxo-padrao);
+}
+
+.inputeditarvagas:focus {
+  border: 2px solid var(--amarelo-padrao);
+}
+
+.fundoBotao {
+  background-color: transparent;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 170px;
+  height: 45px;
+  border: 0;
+  border-bottom: 5px solid var(--amarelo-padrao);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.fundoBotao:hover {
+  transition: 0.5s;
+  transform: scale(1.07);
+  border: 5px solid var(--error);
+  border-radius: 23px;
+  background-color: var(--error);
+  color: #ddd;
+}
+
+/* Button Delete Account */
+.buttonDeleteAccount {
+  position: relative;
+  padding: 1em 1.8em;
+  outline: none;
+  border: 1px solid white;
+  background: white;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid #DF0033;
+}
+
+.buttonDeleteAccount:hover {
+  transition-delay: 0.6s;
+  border-bottom: 0px;
+  background: #DF0033;
+  color: #EFEFEF;
+}
+
+.buttonDeleteAccount span {
+  position: absolute;
+}
+
+.buttonDeleteAccount span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #DF0033);
+}
+
+.buttonDeleteAccount:hover span:nth-child(1) {
+  left: 100%;
+  transition: 0.7s;
+}
+
+.buttonDeleteAccount span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #DF0033);
+}
+
+.buttonDeleteAccount:hover span:nth-child(3) {
+  right: 100%;
+  transition: 0.7s;
+  transition-delay: 0.35s;
+}
+
+.buttonDeleteAccount span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #DF0033);
+}
+
+.buttonDeleteAccount:hover span:nth-child(2) {
+  top: 100%;
+  transition: 0.7s;
+  transition-delay: 0.17s;
+}
+
+.buttonDeleteAccount span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #DF0033);
+}
+
+.buttonDeleteAccount:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 0.7s;
+  transition-delay: 0.52s;
+}
+
+.buttonDeleteAccount:active {
+  background: #DF0033;
+  background: linear-gradient(to top right, #DF0033, #F3C42E);
+  color: #bfbfbf;
+  box-shadow: 0 0 8px #DF0033, 0 0 8px #F3C42E, 0 0 8px #DF0033;
+  transition: 0.1s;
+}
+
+.buttonDeleteAccount:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+  transition: none;
+  transition-delay: none;
+}
+
+
+.editarCurriculo {
+  margin: 20px;
+}
+
+.excluirPerfil {
+  font-size: 12pt;
+}
+
+p#descricaoUser {
+  font-size: 14px;
+}
+
+/* Fim perfil*/
+
+/* Início Login */
+.login-white-background {
+  background-color: var(--branco-padrao);
+  height: 100%;
+  min-height: 120vh;
+  margin-bottom: -50px;
+}
+
+.logo-login {
+  margin-top: 20px;
+}
+
+body#login {
+  background-image: url("../images/Background.png");
+  min-height: 100vh;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+}
+
+.inputLogin {
+  height: 50px;
+  border-radius: 12px;
+  width: 80%;
+  border: 2px solid var(--roxo-padrao);
+  padding-left: 20px;
+  font-family: 'nunito';
+  background-color: var(--cinza-claro-fundo);
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.asterisco {
+  color: var(--amarelo-padrao);
+}
+
+
+input:focus {
+  outline: none !important;
+  border: 1px solid red;
+
+}
+
+.connectedSpan {
+  font-size: 10pt;
+}
+
+.forgetSpan {
+  font-size: 11pt;
+}
+
+.divOptionsLogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+.linkForgetPassword {
+  list-style: none;
+  text-decoration: none;
+  outline: 0;
+  color: var(--roxo-padrao);
+  margin-right: 15px;
+}
+
+.linkForgetPassword:hover {
+  color: var(--roxo-hover);
+}
+
+.btnEntrarLogin {
+  width: 80%;
+  height: 50px;
+  background-color: var(--amarelo-padrao);
+  outline: 0;
+  border: 0px;
+  border-radius: 23px;
+  color: var(--branco-padrao);
+  font-family: 'nunito';
+}
+
+.btnEntrarLogin:hover {
+  outline: 0;
+  background-color: var(--amarelo-hover);
+}
+
+.lineForLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#numberInput::-webkit-outer-spin-button,
+#numberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+p#cadastrar {
+  font-family: "nunito-italic" !important;
+  color: var(--roxo-padrao);
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+p#cadastrar a {
+  text-decoration: underline;
+  color: var(--roxo-padrao);
+}
+
+p#cadastrar a:hover {
+  color: var(--roxo-hover);
+}
+
+/*Inicio Criar Conta*/
+.background-create-account {
+  background-color: var(--roxo-padrao);
+  height: 100%;
+  min-height: 140vh;
+  margin-bottom: -50px;
+}
+
+.create-account-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.title-create-account {
+  margin-top: 20px;
+  text-align: left !important;
+}
+
+.btn-type {
+  width: 100%;
+  height: max-content;
+  padding: 20px;
+  text-decoration: none;
+  background-color: var(--cinza-fundo);
+  border: 3px solid var(--roxo-padrao);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 16px 0px var(--shadow-black);
+}
+
+.btn-type-fundo {
+  background-color: var(--roxo-padrao);
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.fa-building-o {
+  color: var(--branco-padrao);
+  font-size: 80px;
+}
+
+.description {
+  padding: 10px;
+  align-items: center;
+  font-family: "nunito-semibold";
+  height: 60px;
+  color: #530084;
+}
+
+.center {
+  text-align: center;
+  background-color: white;
+}
+
+.description div h3 {
+  text-decoration: none;
+  color: var(--roxo-padrao);
+  font-family: "nunito-semibold";
+}
+
+.description hr {
+  background-color: var(--amarelo-padrao) !important;
+  height: 3px !important;
+  margin-top: -10px;
+}
+
+.description p {
+  font-family: "nunito";
+}
+
+h1.create-account-frase {
+  color: var(--branco-padrao);
+  font-family: "nunito-bold";
+  font-size: 35px;
+  text-align: left;
+  margin-top: 25px;
+}
+
+p.create-account-frase {
+  margin-top: 40px;
+  color: var(--branco-padrao);
+  font-family: "nunito";
+  font-size: 30px;
+  text-align: left;
+  line-height: 35px;
+}
+
+/*Fim Criar Conta*/
+
+/*Iinicio Container ver perfil na vaga*/
+
+.container-ver-vaga-perfil {
+  width: 100%;
+  background-color: var(--cinza-claro-fundo);
+  height: max-content;
+  box-shadow: 0px 8px 16px 0px var(--shadow-black);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.container-ver-vaga-perfil div {
+  color: var(--roxo-padrao);
+  font-size: 20px;
+  font-family: "nunito-semibold";
+}
+
+.btn-ver {
+  color: var(--branco-padrao);
+  background-color: var(--amarelo-padrao);
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.btn-ver i {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+/*Fim*/
+
+/* Início Teste SoftSkill */
+.questionNumber {
+  text-align: start;
+  color: var(--amarelo-padrao);
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.questionMessage {
+  text-align: start;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+.inputForSoftSkill {
+  display: none;
+}
+
+.labelForSoftSkill {
+  position: relative;
+  color: var(--roxo-padrao);
+  background-color: var(--cinza-fundo);
+  font-family: 'nunito';
+  font-size: 15pt;
+  height: 65px;
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelForSoftSkill:hover {
+  background-color: var(--amarelo-padrao);
+  color: var(--branco-padrao);
+}
+
+.labelForSoftSkill:before {
+  position: absolute;
+  content: '';
+  height: 25px;
+  width: 25px;
+  border: 3px solid var(--roxo-padrao);
+  background-color: var(--cinza-fundo);
+  border-radius: 50%;
+  margin-right: 90%;
+}
+
+.inputForSoftSkill:checked+.labelForSoftSkill {
+  background-color: var(--roxo-hover);
+  color: var(--branco-padrao);
+}
+
+.inputForSoftSkill:checked+.labelForSoftSkill::before {
+  border: 4px solid var(--branco-padrao);
+  background-color: var(--roxo-hover);
+}
+
+/* Inicio novo botão softSkill */
+.btnSoft {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  height: 60px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnSoft:focus {
+  outline: 0;
+}
+
+.btnSoft:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background-color: var(--amarelo-padrao);
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+.btnSoft span {
+  position: relative;
+  font-family: "nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--roxo-padrao);
+  transition: 0.5s;
+}
+
+.btnSoft svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--roxo-padrao);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.btnSoft:hover:before {
+  width: 100%;
+  background: var(--amarelo-padrao);
+}
+
+.btnSoft:hover svg {
+  transform: translateX(20px);
+  transform: scale(2);
+}
+
+.btnSoft:hover span {
+  font-size: 28px;
+}
+
+.btnSoft:active {
+  transform: scale(0.95);
+}
+
+/* Fim botão novo softSkill */
+.btnPassSoftSkillTest {
+  width: 100%;
+  background-color: var(--amarelo-padrao);
+  color: var(--branco-padrao);
+  height: 50px;
+  border-radius: 32px;
+  outline: 0;
+  border: 0px;
+  font-size: 18pt;
+  font-family: 'nunito';
+  font-weight: bolder;
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.btnPassSoftSkillTest:hover {
+  outline: 0;
+  background-color: var(--amarelo-hover);
+}
+
+.btnPassSoftSkillTest:focus {
+  outline: 0;
+}
+
+.btnBackSoftSkillTest {
+  width: 50%;
+  height: 50px;
+  border-bottom: 4px solid var(--roxo-padrao);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 3px;
+  outline: 0;
+  font-size: 18pt;
+  font-family: 'nunito';
+  font-weight: bolder;
+  margin-top: 20px;
+  transition: 1s;
+  background-color: transparent !important;
+}
+
+.btnBackSoftSkillTest:hover {
+  outline: 0;
+  border-bottom: 4px solid var(--roxo-hover);
+}
+
+.btnBackSoftSkillTest:focus {
+  outline: 0;
+}
+
+.spaceNumber {
+  gap: 42px
+}
+
+#finalizarBtnSoftSkill {
+  display: none;
+}
+
+.modalConfirm {
+  height: 200px;
+  width: 90%;
+}
+
+.containerModalConfirm {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.confirmBtn {
+  width: 100px;
+  height: 50px;
+  border: 0;
+  border-radius: 12px;
+  transition: 1s;
+}
+
+.confirmBtn:hover {
+  width: 120px;
+  outline: 0;
+}
+
+/* Fim Teste SoftSkill */
+
+/* Loading Teste */
+#divLoadingTeste {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+}
+
+.loadTriangulo {
+  background: var(--cinza-claro-fundo);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.jelly-triangle {
+  --uib-size: 4.8rem;
+  --uib-speed: 1.75s;
+  --uib-color: var(--roxo-padrao);
+  position: relative;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  filter: url('#uib-jelly-triangle-ooze');
+}
+
+.jelly-triangle__dot,
+.jelly-triangle::before,
+.jelly-triangle::after {
+  content: '';
+  position: absolute;
+  width: 33%;
+  height: 33%;
+  background: var(--uib-color);
+  border-radius: 100%;
+  box-shadow: 0 0 20px rgba(83, 0, 132, 0.3);
+}
+
+.jelly-triangle__dot {
+  top: 6%;
+  left: 30%;
+  animation: grow7132 var(--uib-speed) ease infinite;
+}
+
+.jelly-triangle::before {
+  bottom: 6%;
+  right: 0;
+  animation: grow7132 var(--uib-speed) ease calc(var(--uib-speed) * -0.666) infinite;
+}
+
+.jelly-triangle::after {
+  bottom: 6%;
+  left: 0;
+  animation: grow7132 var(--uib-speed) ease calc(var(--uib-speed) * -0.333) infinite;
+}
+
+.jelly-triangle__traveler {
+  position: absolute;
+  top: 6%;
+  left: 30%;
+  width: 33%;
+  height: 33%;
+  background: var(--uib-color);
+  border-radius: 100%;
+  animation: triangulate6214 var(--uib-speed) ease infinite;
+}
+
+.jelly-maker {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+@keyframes triangulate6214 {
+
+  0%,
+  100% {
+    transform: none;
+  }
+
+  33.333% {
+    transform: translate(120%, 175%);
+  }
+
+  66.666% {
+    transform: translate(-95%, 175%);
+  }
+}
+
+@keyframes grow7132 {
+
+  0%,
+  100% {
+    transform: scale(1.5);
+  }
+
+  20%,
+  70% {
+    transform: none;
+  }
+}
+
+/* Fim Teste SoftSkill */
+
+/* Botões criar currículo */
+.newButton {
+  border-radius: 10px;
+  background-color: var(--cinza-claro-fundo);
+  border: 0;
+  outline: 0;
+  color: var(--roxo-padrao);
+  font-size: 14pt;
+  border: 2px solid var(--roxo-padrao);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Fim Teste SoftSkill */
+
+
+/*Inicio Esqueceu a Senha*/
+
+.text-forget-password {
+  text-align: left;
+  margin-left: 10%;
+  width: 80%;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.text-forget-password span {
+  font-family: "nunito-bold";
+}
+
+.arrow-forgot-password {
+  display: flex;
+  text-decoration: none;
+  color: var(--roxo-padrao);
+  gap: 5px;
+}
+
+.arrow-forgot-password:hover {
+  color: var(--roxo-hover);
+}
+
+/*Fim Esqueceu a Senha*/
+
+/*Inicio Trocar a senha*/
+
+.change-password-img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 150px;
+}
+
+.inputCode {
+  height: 50px;
+  border-radius: 12px;
+  width: 20%;
+  border: 2px solid var(--roxo-padrao);
+  padding-left: 20px;
+  font-family: 'nunito';
+  background-color: var(--cinza-claro-fundo);
+  text-align: center;
+}
+
+.inputCode::placeholder {
+  text-align: center;
+}
+
+.change-password-white-background {
+  background-color: var(--branco-padrao);
+  height: 100%;
+  min-height: 155vh;
+  margin-bottom: -50px;
+}
+
+/*Fim Esqueceu a Senha*/
+.containerGreyColor {
+  background-color: var(--cinza-claro-fundo);
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  padding: 1.4rem;
+}
+
+.perfilCaixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfilCaixa i {
+  color: var(--amarelo-padrao);
+}
+
+.perfilCaixa__caption {
+  font-size: 1.3rem;
+}
+
+.perfilSkillsBox {
+  background-color: var(--cinza-claro-fundo);
+  border-radius: 5%;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+  margin: 2.5rem 0;
+  padding: 2rem;
+}
+
+.listaSkills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.listaSkills li {
+  list-style: none;
+}
+
+.listaSkills li::before {
+  content: "\2022";
+
+  color: var(--amarelo-padrao);
+
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1em;
+}
+
+/* Fim Teste SoftSkill */
+/*Fim Trocar a senha*/
+
+/* Inicio Minhas vagas empresa*/
+.btnNewVaga {
+  margin-top: 20px;
+  width: 80%;
+  height: 45px;
+  border-radius: 23px;
+  background-color: var(--amarelo-padrao);
+  font-family: "nunito-semibold";
+  color: var(--branco-padrao);
+  border-color: var(--amarelo-padrao);
+  border: 0;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 45px;
+}
+
+.btnNewVaga:hover{
+  color: var(--branco-padrao);
+  background-color: var(--amarelo-hover);
+}
+
+/* Fim Minhas vagas empresa*/
+
+/*Iniicio Curriculo*/
+.addNewExpirence {
+  background: transparent;
+  border: none;
+  font-family: "nunito";
+  color: var(--roxo-padrao);
+  margin-left: auto;
+  display: block;
+}
+
+.fa-plus-circle, .fa-minus-circle {
+  color: var(--amarelo-padrao);
+  font-size: 20px;
+}
+
+.fa-plus-circle:hover, .fa-minus-circle:hover {
+  color: var(--amarelo-hover);
+}
+
+.addNewExpirence:focus {
+  border: none;
+}
+
+.removeNewExpirence {
+  background: transparent;
+  border: none;
+  font-family: "nunito";
+  color: var(--roxo-padrao);
+  display: block;
+}
+
+.removeNewExpirence:hover, .addNewExpirence:hover {
+  color: var(--roxo-hover);
+}

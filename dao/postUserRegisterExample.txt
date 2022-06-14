@@ -1,0 +1,40 @@
+//MD5 HASH
+MATCHAGASFORBITMD5 --> 4b0d30a9f642b3bfff67d0b5b28371a9
+VALIDTOKEN --> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVoYWdnZWJAZ21haWwuY29tIiwiaWF0IjoxNjUzMDA0Njc1LCJleHAiOjE2NTMwMDgyNzUsInN1YiI6ImIzNGI5ZWIwLTFkYjUtNGE0MC04MGI3LTc0MDZhMDFiNzE5NSJ9.8eFR3RCuf2LXSnu3yTgkebA3X7TweiGcza6quQovGKk
+
+//Example Request POST --> /User/Register
+{
+    "email": "",
+    "name": "",
+    "password": "",
+    "bornDate": "",
+    "gender": "",
+    "cpf": "",
+    "phoneNumber": ""
+}
+
+//Example Request POST --> /User/Login
+{
+    "email": "",
+    "password": ""
+}
+
+//Example Request PUT --> /User/Update
+{
+    "id": "",
+    "...valores a serem modificados": ""
+}
+
+JSON stringfy example Curriculum
+{"estudo":"{"LoremIpsum":"LoremIpsum","LoremIpsum":"LoremIpsum","LoremIpsum":"LoremIpsum","LoremIpsum":"LoremIpsum"}","experiencia":"{"LoremIpsum": "LoremIpsum","LoremIpsum": "LoremIpsum","LoremIpsum":"LoremIpsum","LoremIpsum":"LoremIpsum"}","hardSkills":"["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum"]","softSkills":"{"LoremIpsum": "LoremIpsum","LoremIpsum":"LoremIpsum","LoremIpsum":"LoremIpsum","LoremIpsum":"LoremIpsum"}"}
+
+SIMPLE BACKUP ==> {
+    const bornDateUpdate = await db.run(`UPDATE users SET bornDate="${bornDate}", updated_at=DateTime('now','localtime') WHERE id="${idUser}"`)
+    if (bornDateUpdate.changes == 0) {
+    const error = {
+        type: 'error',
+        message: 'Database Error, please try again later'
+        }
+        return error
+    }
+}
