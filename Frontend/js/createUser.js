@@ -19,7 +19,7 @@ async function verifyUserInfos() {
 
     if(validate === true) {
         $.ajax({
-            url: "http://localhost:3001/User/Register",
+            url: "https://testematchagas.herokuapp.com/User/Register",
             type: "POST",
             data: {
                 name: nome,

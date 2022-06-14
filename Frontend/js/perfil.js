@@ -8,7 +8,7 @@ const auth = window.sessionStorage.getItem('auth')
 document.onreadystatechange = async function () {
     if (document.readyState == "complete") {
         $.ajax({
-            url: "http://localhost:3001/User/Verify/Infos",
+            url: "https://testematchagas.herokuapp.com/User/Verify/Infos",
             headers: {"Authorization": `Bearer ${auth}`},
             success: function(resul) { 
                 nome = resul.name
@@ -29,7 +29,7 @@ let User
 async function checkUser() {
 
     await $.ajax({
-        url: "http://localhost:3001/User/User",
+        url: "https://testematchagas.herokuapp.com/User/User",
         type: "POST",
         data: { 
             id: id

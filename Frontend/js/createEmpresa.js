@@ -17,7 +17,7 @@ async function verifyCompanyInfos() {
 
     if(validate === true) {
         $.ajax({
-            url: "http://localhost:3001/Company/Register",
+            url: "https://testematchagas.herokuapp.com/Company/Register",
             type: "POST",
             data: {
                 name: razaoSoc,

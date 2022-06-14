@@ -131,7 +131,7 @@ document.onreadystatechange = async function () {
         console.log('teste')
         auth = window.sessionStorage.getItem('auth')
         $.ajax({
-            url: "http://localhost:3001/Company",
+            url: "https://testematchagas.herokuapp.com/Company",
             headers: {"Authorization": `Bearer ${auth}`},
             method: "GET",
             success: function(resul) { 
@@ -168,7 +168,7 @@ function saveInfos() {
     console.log(requirements)
 
     $.ajax({
-        url: "http://localhost:3001/Offer/Create",
+        url: "https://testematchagas.herokuapp.com/Offer/Create",
         type: "POST",
         headers: {"Authorization": `Bearer ${auth}`},
         data: {

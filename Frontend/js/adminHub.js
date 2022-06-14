@@ -13,7 +13,7 @@ let auth = window.sessionStorage.getItem('auth')
 document.onreadystatechange = async function () {
     if (document.readyState == "complete") {
         $.ajax({
-            url: "http://localhost:3001/User/Verify/Infos",
+            url: "https://testematchagas.herokuapp.com/User/Verify/Infos",
             headers: {"Authorization": `Bearer ${auth}`},
             success: function(resul) { 
                 nome = resul.name
@@ -40,7 +40,7 @@ let companies = []
 async function checkVagas() {
 
     await $.ajax({
-        url: "http://localhost:3001/User/Users",
+        url: "https://testematchagas.herokuapp.com/User/Users",
         headers: {"Authorization": `Bearer ${auth}`},
         success: function(resul) { 
             users = resul.message
@@ -50,7 +50,7 @@ async function checkVagas() {
     })
 
     await $.ajax({
-        url: "http://localhost:3001/Company/Companies",
+        url: "https://testematchagas.herokuapp.com/Company/Companies",
         headers: {"Authorization": `Bearer ${auth}`},
         success: function(resul) { 
             companies = resul.message

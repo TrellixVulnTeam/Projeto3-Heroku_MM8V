@@ -10,7 +10,7 @@ let auth = window.sessionStorage.getItem('auth')
 document.onreadystatechange = async function () {
     if (document.readyState == "complete") {
         $.ajax({
-            url: "http://localhost:3001/User/Verify/Infos",
+            url: "https://testematchagas.herokuapp.com/User/Verify/Infos",
             headers: {"Authorization": `Bearer ${auth}`},
             success: function(resul) { 
                 console.log(resul)
@@ -79,7 +79,7 @@ async function checkVagas() {
 
     // async function generateMatch(offerSoft, offerHard) {
     //     await $.ajax({
-    //         url: "http://localhost:3001/Match",
+    //         url: "https://testematchagas.herokuapp.com/Match",
     //         type: "POST",
     //         datatype: 'json',
     //         data: {
@@ -103,7 +103,7 @@ async function checkVagas() {
     // })
 
     await $.ajax({
-        url: "http://localhost:3001/Offer/getOffers",
+        url: "https://testematchagas.herokuapp.com/Offer/getOffers",
         headers: {"Authorization": `Bearer "${auth}"`},
         success: function(resul) { 
             vagas = resul.offers
@@ -116,7 +116,7 @@ async function checkVagas() {
 
     vagas.map((vaga) => {
         $.ajax({
-            url: "http://localhost:3001/Match",
+            url: "https://testematchagas.herokuapp.com/Match",
             type: "POST",
             datatype: 'json',
             data: {

@@ -29,7 +29,7 @@ document.onreadystatechange = async function () {
         const params = new URLSearchParams(window.location.search)
         idOffer = params.get('id')
         $.ajax({
-            url: "http://localhost:3001/Company",
+            url: "https://testematchagas.herokuapp.com/Company",
             type: "GET",
             headers: {"Authorization": `Bearer ${auth}`},
             success: function(resul) { 
@@ -56,7 +56,7 @@ async function checkVaga() {
     console.log(idOffer)
 
     await $.ajax({
-        url: "http://localhost:3001/Offer/offerExpanded",
+        url: "https://testematchagas.herokuapp.com/Offer/offerExpanded",
         type: "POST",
         data: { 
             id: idOffer
@@ -70,7 +70,7 @@ async function checkVaga() {
     })
 
     $.ajax({
-        url: "http://localhost:3001/Offer/usersApplied",
+        url: "https://testematchagas.herokuapp.com/Offer/usersApplied",
         type: "POST",
         headers: {"Authorization": `Bearer ${auth}`},
         data: {idVaga: idOffer},

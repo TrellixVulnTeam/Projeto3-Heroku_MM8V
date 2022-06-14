@@ -7,7 +7,7 @@
 //     });
 
 function verifyLogin() {
-    $.post("http://localhost:3001/User/Login",
+    $.post("https://testematchagas.herokuapp.com/User/Login",
     {"email" : $("#email").val(), 
     "password" : $("#passWord").val()}
     , function(msg){
@@ -15,7 +15,7 @@ function verifyLogin() {
             window.sessionStorage.setItem('auth', msg.token)
             if (msg.typeOfUser == 'user') {
                 $.ajax({
-                    url: "http://localhost:3001/User/Verify/Curriculum",
+                    url: "https://testematchagas.herokuapp.com/User/Verify/Curriculum",
                     type: "GET",
                     headers: {"Authorization": `Bearer ${msg.token}`},
                     success: function(resul) {
